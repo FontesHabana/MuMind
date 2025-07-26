@@ -1,5 +1,6 @@
 ---
-
+import Home from "../components/Home.jsx";
+import "../styles/global.css"
 ---
 
 <html lang="en">
@@ -8,9 +9,10 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<link rel="stylesheet" href="/src/styles/global.css" />
+		<title>MuMind</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body> 
+		<Home client:load/>
 	</body>
 </html>

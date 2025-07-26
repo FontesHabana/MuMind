@@ -1,5 +1,7 @@
+import { keyframes, transform } from 'framer-motion';
+
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports= {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
@@ -15,9 +17,17 @@ export default {
           700: '#0369a1',
           800: '#075985',
           900: '#0c4a6e',
-        }
-      }
+        },
+        'cielo': '#0ea5e9',
+      },
+      fontFamily: {
+        'akzidenz': ['Oswald', 'Work Sans', 'Helvetica Neue', 'Arial', 'sans-serif'],
+      },
+    
+
     },
   },
+
+ 
   plugins: [],
 }
