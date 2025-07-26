@@ -1,0 +1,564 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Cuál es el mejor topping para pizza?"
+    },
+    {
+      "id": 2,
+      "question": "Nombra una verdura que a nadie le gusta."
+    },
+    {
+      "id": 3,
+      "question": "¿Cuál es el peor restaurante de comida rápida?"
+    },
+    {
+      "id": 4,
+      "question": "¿Cuál es el mejor sabor de helado?"
+    },
+    {
+      "id": 5,
+      "question": "¿Cuál es la peor tarea doméstica?"
+    },
+    {
+      "id": 6,
+      "question": "Nombra la festividad más sobrevalorada."
+    },
+    {
+      "id": 7,
+      "question": "¿Cuál es la mejor película de superhéroes?"
+    },
+    {
+      "id": 8,
+      "question": "Nombra una fruta que no pondrías en un batido."
+    },
+    {
+      "id": 9,
+      "question": "¿Cuál es la mejor raza de perro?"
+    },
+    {
+      "id": 10,
+      "question": "¿Cuál es la mejor canción de todos los tiempos?"
+    },
+    {
+      "id": 11,
+      "question": "¿Cuál es el mejor tipo de queso?"
+    },
+    {
+      "id": 12,
+      "question": "¿Cuál es el peor sabor de refresco?"
+    },
+    {
+      "id": 13,
+      "question": "Nombra una comida que nunca comerías en una cita."
+    },
+    {
+      "id": 14,
+      "question": "¿Cuál es la mejor cura para la resaca?"
+    },
+    {
+      "id": 15,
+      "question": "¿Cuál es la cadena de restaurantes más sobrevalorada?"
+    },
+    {
+      "id": 16,
+      "question": "Nombra un snack que nunca compartirías con nadie."
+    },
+    {
+      "id": 17,
+      "question": "¿Cuál es lo peor que puedes poner en una hamburguesa?"
+    },
+    {
+      "id": 18,
+      "question": "¿Cuál es la mejor comida para el desayuno?"
+    },
+    {
+      "id": 19,
+      "question": "¿Cuál es el postre más popular?"
+    },
+    {
+      "id": 20,
+      "question": "¿Cuál es lo más raro que pondrías en una pizza?"
+    },
+    {
+      "id": 21,
+      "question": "Si los animales pudieran hablar, ¿cuál sería el más grosero?"
+    },
+    {
+      "id": 22,
+      "question": "Nombra un trabajo que no harías ni por $1,000,000."
+    },
+    {
+      "id": 23,
+      "question": "¿Cuál es la mejor excusa para faltar al trabajo?"
+    },
+    {
+      "id": 24,
+      "question": "¿Cuál es el peor lugar para estar atrapado por 24 horas?"
+    },
+    {
+      "id": 25,
+      "question": "Nombra una celebrity que todos aman pero tú no."
+    },
+    {
+      "id": 26,
+      "question": "¿Cuál es el peor nombre para una mascota?"
+    },
+    {
+      "id": 27,
+      "question": "¿Cuál es el mejor olor del mundo?"
+    },
+    {
+      "id": 28,
+      "question": "Nombra un color que no le queda bien a nadie."
+    },
+    {
+      "id": 29,
+      "question": "¿Cuál es el sonido más molesto del mundo?"
+    },
+    {
+      "id": 30,
+      "question": "Si pudieras renombrar la Tierra, ¿cómo la llamarías?"
+    },
+    {
+      "id": 31,
+      "question": "¿Quién es la celebrity más sobrevalorada?"
+    },
+    {
+      "id": 32,
+      "question": "Nombra un programa de TV que debería haberse cancelado antes."
+    },
+    {
+      "id": 33,
+      "question": "¿Cuál es la mejor boy band de todos los tiempos?"
+    },
+    {
+      "id": 34,
+      "question": "¿Cuál es la peor canción jamás lanzada?"
+    },
+    {
+      "id": 35,
+      "question": "Nombra una película que todos aman pero tú no soportas."
+    },
+    {
+      "id": 36,
+      "question": "¿Cuál es la mejor caricatura de los 90?"
+    },
+    {
+      "id": 37,
+      "question": "¿Quién es el personaje de TV más gracioso de todos los tiempos?"
+    },
+    {
+      "id": 38,
+      "question": "¿Cuál es la mejor película de Disney?"
+    },
+    {
+      "id": 39,
+      "question": "Nombra un villano de película por el que secretamente simpatizas."
+    },
+    {
+      "id": 40,
+      "question": "¿Cuál es el peor reality show?"
+    },
+    {
+      "id": 41,
+      "question": "Nombra la peor ciudad para visitar."
+    },
+    {
+      "id": 42,
+      "question": "¿Cuál es el mejor lugar para vacacionar?"
+    },
+    {
+      "id": 43,
+      "question": "¿Cuál es el peor país para la comida?"
+    },
+    {
+      "id": 44,
+      "question": "Nombra un estado donde nunca querrías vivir."
+    },
+    {
+      "id": 45,
+      "question": "¿Cuál es el mejor parque temático del mundo?"
+    },
+    {
+      "id": 46,
+      "question": "¿Cuál es el peor lugar para perderse?"
+    },
+    {
+      "id": 47,
+      "question": "Nombra la atracción turística más aburrida."
+    },
+    {
+      "id": 48,
+      "question": "¿Cuál es la mejor actividad de playa?"
+    },
+    {
+      "id": 49,
+      "question": "¿Cuál es la mejor ciudad para un amante de la comida?"
+    },
+    {
+      "id": 50,
+      "question": "Nombra un país que visitarías solo por las compras."
+    },
+    {
+      "id": 51,
+      "question": "¿Cuál es la mejor marca de cerveza?"
+    },
+    {
+      "id": 52,
+      "question": "¿Cuál es el peor shot para tomar en un bar?"
+    },
+    {
+      "id": 53,
+      "question": "Nombra el mejor juego de fiesta."
+    },
+    {
+      "id": 54,
+      "question": "¿Cuál es el cóctel más sobrevalorado?"
+    },
+    {
+      "id": 55,
+      "question": "¿Cuál es el mejor snack para comer mientras bebes?"
+    },
+    {
+      "id": 56,
+      "question": "Nombra la peor bebida para la resaca."
+    },
+    {
+      "id": 57,
+      "question": "¿Cuál es la mejor bebida para el brunch?"
+    },
+    {
+      "id": 58,
+      "question": "Nombra la peor mezcla de licores."
+    },
+    {
+      "id": 59,
+      "question": "¿Cuál es lo más vergonzoso que puede pasar en una fiesta?"
+    },
+    {
+      "id": 60,
+      "question": "¿Cuál es la mejor excusa para irse temprano de una fiesta?"
+    },
+    {
+      "id": 61,
+      "question": "¿Quién de este grupo ganaría en un apocalipsis zombie?"
+    },
+    {
+      "id": 62,
+      "question": "¿Cuál es la razón más probable por la que alguien de este grupo se haría viral?"
+    },
+    {
+      "id": 63,
+      "question": "¿Quién del grupo es más probable que olvide su propio cumpleaños?"
+    },
+    {
+      "id": 64,
+      "question": "Nombra una habilidad que todos en este grupo deberían aprender."
+    },
+    {
+      "id": 65,
+      "question": "¿Quién de este grupo es el mejor en Herd Mentality?"
+    },
+    {
+      "id": 66,
+      "question": "¿Cuál es el mejor chiste interno que compartimos?"
+    },
+    {
+      "id": 67,
+      "question": "¿Quién sobreviviría más tiempo en una isla desierta?"
+    },
+    {
+      "id": 68,
+      "question": "¿Quién es más probable que se haga famoso?"
+    },
+    {
+      "id": 69,
+      "question": "¿Cuál es lo más gracioso que alguien de este grupo ha hecho?"
+    },
+    {
+      "id": 70,
+      "question": "¿Quién es la persona más competitiva aquí?"
+    },
+    {
+      "id": 71,
+      "question": "¿Cuál es la mejor película navideña?"
+    },
+    {
+      "id": 72,
+      "question": "Nombra la peor idea de disfraz de Halloween."
+    },
+    {
+      "id": 73,
+      "question": "¿Cuál es la mejor comida navideña?"
+    },
+    {
+      "id": 74,
+      "question": "¿Cuál es la peor canción navideña?"
+    },
+    {
+      "id": 75,
+      "question": "Nombra una festividad de la que te gustaría deshacerte."
+    },
+    {
+      "id": 76,
+      "question": "¿Cuál es lo mejor del verano?"
+    },
+    {
+      "id": 77,
+      "question": "¿Cuál es lo peor del invierno?"
+    },
+    {
+      "id": 78,
+      "question": "Nombra el mejor regalo que puedes dar a alguien."
+    },
+    {
+      "id": 79,
+      "question": "¿Cuál es la tradición navideña más molesta?"
+    },
+    {
+      "id": 80,
+      "question": "¿Cuál es la mejor festividad para celebrar?"
+    },
+    {
+      "id": 81,
+      "question": "¿Cuál es el mejor juego de mesa?"
+    },
+    {
+      "id": 82,
+      "question": "¿Cuál es el peor deporte para ver?"
+    },
+    {
+      "id": 83,
+      "question": "¿Cuál es el mejor videojuego de todos los tiempos?"
+    },
+    {
+      "id": 84,
+      "question": "Nombra el equipo deportivo más sobrevalorado."
+    },
+    {
+      "id": 85,
+      "question": "¿Cuál es el mejor deporte para jugar con amigos?"
+    },
+    {
+      "id": 86,
+      "question": "¿Cuál es el peor evento olímpico?"
+    },
+    {
+      "id": 87,
+      "question": "Nombra un deporte que no debería existir."
+    },
+    {
+      "id": 88,
+      "question": "¿Cuál es el mejor deporte para ver en vivo?"
+    },
+    {
+      "id": 89,
+      "question": "¿Quién es el mejor atleta de todos los tiempos?"
+    },
+    {
+      "id": 90,
+      "question": "¿Cuál es la actividad al aire libre más divertida?"
+    },
+    {
+      "id": 91,
+      "question": "¿Cuál es la mejor invención de todos los tiempos?"
+    },
+    {
+      "id": 92,
+      "question": "¿Cuál es lo peor de ser adulto?"
+    },
+    {
+      "id": 93,
+      "question": "Nombra la mejor década para vivir."
+    },
+    {
+      "id": 94,
+      "question": "¿Cuál es el peor consejo que has recibido?"
+    },
+    {
+      "id": 95,
+      "question": "¿Cuál es lo mejor que puedes hacer un domingo perezoso?"
+    },
+    {
+      "id": 96,
+      "question": "Nombra la peor tendencia de todos los tiempos."
+    },
+    {
+      "id": 97,
+      "question": "¿Cuál es la mejor excusa para llegar tarde?"
+    },
+    {
+      "id": 98,
+      "question": "¿Cuál es la peor forma de gastar $1,000?"
+    },
+    {
+      "id": 99,
+      "question": "Nombra el mejor animal para tener como mascota."
+    },
+    {
+      "id": 100,
+      "question": "¿Cuál es lo mejor de estar vivo?"
+    },
+    {
+      "id": 101,
+      "question": "¿Cuál es el mejor sabor de papas fritas?"
+    },
+    {
+      "id": 102,
+      "question": "¿Cuál es el deporte más aburrido para ver en vivo?"
+    },
+    {
+      "id": 103,
+      "question": "Nombra un país muy frío."
+    },
+    {
+      "id": 104,
+      "question": "Nombra la fruta más grande que puedes meter en tu boca sin cortarla."
+    },
+    {
+      "id": 105,
+      "question": "¿Preferirías ser la persona más rica del mundo o la más inteligente?"
+    },
+    {
+      "id": 106,
+      "question": "Nombra uno de los renos de Santa. (No Rodolfo)."
+    },
+    {
+      "id": 107,
+      "question": "¿Preferirías tener una estatua tuya o un cuadro tuyo?"
+    },
+    {
+      "id": 108,
+      "question": "¿Cuál es la comida más pegajosa?"
+    },
+    {
+      "id": 109,
+      "question": "¿Cuál es la mejor película navideña?"
+    },
+    {
+      "id": 110,
+      "question": "Nombra una ocupación que comience con B."
+    },
+    {
+      "id": 111,
+      "question": "Nombra un animal que no tenga cola."
+    },
+    {
+      "id": 112,
+      "question": "¿Cuántas Big Macs podría comer una persona normal en 20 minutos?"
+    },
+    {
+      "id": 113,
+      "question": "¿A qué hora el desayuno se convierte en almuerzo?"
+    },
+    {
+      "id": 114,
+      "question": "¿Cuál es tu utensilio de cocina favorito?"
+    },
+    {
+      "id": 115,
+      "question": "Nombra una trilogía de películas."
+    },
+    {
+      "id": 116,
+      "question": "Si pudieras manipular el Sombrero Seleccionador, ¿qué casa de Hogwarts elegirías?"
+    },
+    {
+      "id": 117,
+      "question": "¿Cuál sería el mejor programa de concursos al que ir?"
+    },
+    {
+      "id": 118,
+      "question": "Nombra uno de los Siete Enanitos."
+    },
+    {
+      "id": 119,
+      "question": "¿Cuál es la mejor habitación de la casa?"
+    },
+    {
+      "id": 120,
+      "question": "¿Cuál es la mejor película de Disney de todos los tiempos?"
+    },
+    {
+      "id": 121,
+      "question": "Nombra un pájaro famoso."
+    },
+    {
+      "id": 122,
+      "question": "Nombra un insecto que no puede volar."
+    },
+    {
+      "id": 123,
+      "question": "Nombra una isla en el Mediterráneo."
+    },
+    {
+      "id": 124,
+      "question": "Nombra el mejor deporte de bar."
+    },
+    {
+      "id": 125,
+      "question": "¿Cuál es el mejor color de marcador?"
+    },
+    {
+      "id": 126,
+      "question": "¿Cuál es lo mejor para rellenar una aceituna?"
+    },
+    {
+      "id": 127,
+      "question": "¿Cuál es el mejor sabor de gelatina?"
+    },
+    {
+      "id": 128,
+      "question": "Nombra un animal sin cola."
+    },
+    {
+      "id": 129,
+      "question": "¿Cuál es la mejor salsa para comer papas fritas?"
+    },
+    {
+      "id": 130,
+      "question": "Nombra algo que harías en la playa."
+    },
+    {
+      "id": 131,
+      "question": "Nombra un pájaro que no vuela."
+    },
+    {
+      "id": 132,
+      "question": "Mejor servicio de streaming."
+    },
+    {
+      "id": 133,
+      "question": "¿Cuál es el mejor juego de patio de recreo?"
+    },
+    {
+      "id": 134,
+      "question": "¿Preferirías vivir en la ciudad, el campo o la costa?"
+    },
+    {
+      "id": 135,
+      "question": "¿Sudadera o hoodie?"
+    },
+    {
+      "id": 136,
+      "question": "Nombra un sabor de fideos instantáneos."
+    },
+    {
+      "id": 137,
+      "question": "Si tuvieras una papa como mascota, ¿cómo la llamarías?"
+    },
+    {
+      "id": 138,
+      "question": "Mejor comida de Francia."
+    },
+    {
+      "id": 139,
+      "question": "¿Agua natural, con gas o del grifo?"
+    },
+    {
+      "id": 140,
+      "question": "¿Cuántos nuggets de pollo podrías comer en 1 minuto?"
+    }
+  ]
+}

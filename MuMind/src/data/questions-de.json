@@ -1,0 +1,564 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Was ist der beste Pizza-Belag?"
+    },
+    {
+      "id": 2,
+      "question": "Nenne ein Gemüse, das niemand mag."
+    },
+    {
+      "id": 3,
+      "question": "Was ist das schlechteste Fast-Food-Restaurant?"
+    },
+    {
+      "id": 4,
+      "question": "Was ist die beste Eiscreme-Geschmacksrichtung?"
+    },
+    {
+      "id": 5,
+      "question": "Was ist die schlimmste Hausarbeit?"
+    },
+    {
+      "id": 6,
+      "question": "Nenne den überbewertesten Feiertag."
+    },
+    {
+      "id": 7,
+      "question": "Was ist der beste Superhelden-Film?"
+    },
+    {
+      "id": 8,
+      "question": "Nenne eine Frucht, die du nicht in einen Smoothie geben würdest."
+    },
+    {
+      "id": 9,
+      "question": "Was ist die beste Hunderasse?"
+    },
+    {
+      "id": 10,
+      "question": "Was ist das beste Lied aller Zeiten?"
+    },
+    {
+      "id": 11,
+      "question": "Was ist die beste Käsesorte?"
+    },
+    {
+      "id": 12,
+      "question": "Was ist der schlechteste Limonadengeschmack?"
+    },
+    {
+      "id": 13,
+      "question": "Nenne ein Essen, das du niemals bei einem Date essen würdest."
+    },
+    {
+      "id": 14,
+      "question": "Was ist das beste Mittel gegen Kater?"
+    },
+    {
+      "id": 15,
+      "question": "Was ist die überbewerteste Restaurantkette?"
+    },
+    {
+      "id": 16,
+      "question": "Nenne einen Snack, den du mit niemandem teilen würdest."
+    },
+    {
+      "id": 17,
+      "question": "Was ist das Schlimmste, was man auf einen Burger legen kann?"
+    },
+    {
+      "id": 18,
+      "question": "Was ist das beste Frühstücksessen?"
+    },
+    {
+      "id": 19,
+      "question": "Was ist das beliebteste Dessert?"
+    },
+    {
+      "id": 20,
+      "question": "Was ist das Seltsamste, was man auf eine Pizza legen würde?"
+    },
+    {
+      "id": 21,
+      "question": "Wenn Tiere sprechen könnten, welches wäre das unhöflichste?"
+    },
+    {
+      "id": 22,
+      "question": "Nenne einen Job, den du nicht für 1.000.000 $ machen würdest."
+    },
+    {
+      "id": 23,
+      "question": "Was ist die beste Ausrede, um nicht zur Arbeit zu gehen?"
+    },
+    {
+      "id": 24,
+      "question": "Was ist der schlimmste Ort, um 24 Stunden festzusitzen?"
+    },
+    {
+      "id": 25,
+      "question": "Nenne eine Berühmtheit, die alle lieben, aber du nicht."
+    },
+    {
+      "id": 26,
+      "question": "Was ist der schlechteste Name für ein Haustier?"
+    },
+    {
+      "id": 27,
+      "question": "Was ist der beste Geruch der Welt?"
+    },
+    {
+      "id": 28,
+      "question": "Nenne eine Farbe, die niemandem steht."
+    },
+    {
+      "id": 29,
+      "question": "Was ist das nervigste Geräusch der Welt?"
+    },
+    {
+      "id": 30,
+      "question": "Wenn du die Erde umbenennen könntest, wie würdest du sie nennen?"
+    },
+    {
+      "id": 31,
+      "question": "Wer ist die überbewerteste Berühmtheit?"
+    },
+    {
+      "id": 32,
+      "question": "Nenne eine TV-Show, die früher hätte abgesetzt werden sollen."
+    },
+    {
+      "id": 33,
+      "question": "Was ist die beste Boyband aller Zeiten?"
+    },
+    {
+      "id": 34,
+      "question": "Was ist das schlechteste Lied, das jemals veröffentlicht wurde?"
+    },
+    {
+      "id": 35,
+      "question": "Nenne einen Film, den alle lieben, aber du nicht ausstehen kannst."
+    },
+    {
+      "id": 36,
+      "question": "Was ist der beste Cartoon der 90er?"
+    },
+    {
+      "id": 37,
+      "question": "Wer ist der lustigste TV-Charakter aller Zeiten?"
+    },
+    {
+      "id": 38,
+      "question": "Was ist der beste Disney-Film?"
+    },
+    {
+      "id": 39,
+      "question": "Nenne einen Filmschurken, für den du heimlich Partei ergreifst."
+    },
+    {
+      "id": 40,
+      "question": "Was ist die schlechteste Reality-TV-Show?"
+    },
+    {
+      "id": 41,
+      "question": "Nenne die schlechteste Stadt zum Besuchen."
+    },
+    {
+      "id": 42,
+      "question": "Was ist der beste Urlaubsort?"
+    },
+    {
+      "id": 43,
+      "question": "Was ist das schlechteste Land für Essen?"
+    },
+    {
+      "id": 44,
+      "question": "Nenne einen Staat, in dem du niemals leben möchtest."
+    },
+    {
+      "id": 45,
+      "question": "Was ist der beste Freizeitpark der Welt?"
+    },
+    {
+      "id": 46,
+      "question": "Was ist der schlimmste Ort, um sich zu verirren?"
+    },
+    {
+      "id": 47,
+      "question": "Nenne die langweiligste Touristenattraktion."
+    },
+    {
+      "id": 48,
+      "question": "Was ist die beste Strandaktivität?"
+    },
+    {
+      "id": 49,
+      "question": "Was ist die beste Stadt für einen Essensliebhaber?"
+    },
+    {
+      "id": 50,
+      "question": "Nenne ein Land, das du nur zum Einkaufen besuchen würdest."
+    },
+    {
+      "id": 51,
+      "question": "Was ist die beste Biermarke?"
+    },
+    {
+      "id": 52,
+      "question": "Was ist der schlechteste Shot, den man in einer Bar nehmen kann?"
+    },
+    {
+      "id": 53,
+      "question": "Nenne das beste Partyspiel."
+    },
+    {
+      "id": 54,
+      "question": "Was ist der überbewerteste Cocktail?"
+    },
+    {
+      "id": 55,
+      "question": "Was ist der beste Snack zum Trinken?"
+    },
+    {
+      "id": 56,
+      "question": "Nenne das schlechteste Getränk gegen Kater."
+    },
+    {
+      "id": 57,
+      "question": "Was ist das beste Getränk zum Brunch?"
+    },
+    {
+      "id": 58,
+      "question": "Nenne die schlechteste Alkohol-Mischung."
+    },
+    {
+      "id": 59,
+      "question": "Was ist das Peinlichste, was auf einer Party passieren kann?"
+    },
+    {
+      "id": 60,
+      "question": "Was ist die beste Ausrede, um früh von einer Party zu gehen?"
+    },
+    {
+      "id": 61,
+      "question": "Wer in dieser Gruppe würde eine Zombie-Apokalypse überleben?"
+    },
+    {
+      "id": 62,
+      "question": "Was ist der wahrscheinlichste Grund, warum jemand aus dieser Gruppe viral gehen würde?"
+    },
+    {
+      "id": 63,
+      "question": "Wer in der Gruppe würde am ehesten seinen eigenen Geburtstag vergessen?"
+    },
+    {
+      "id": 64,
+      "question": "Nenne eine Fähigkeit, die alle in dieser Gruppe lernen sollten."
+    },
+    {
+      "id": 65,
+      "question": "Wer in dieser Gruppe ist am besten in Herd Mentality?"
+    },
+    {
+      "id": 66,
+      "question": "Was ist der beste interne Witz, den wir teilen?"
+    },
+    {
+      "id": 67,
+      "question": "Wer würde am längsten auf einer einsamen Insel überleben?"
+    },
+    {
+      "id": 68,
+      "question": "Wer wird am ehesten berühmt?"
+    },
+    {
+      "id": 69,
+      "question": "Was ist das Lustigste, was jemand aus dieser Gruppe jemals getan hat?"
+    },
+    {
+      "id": 70,
+      "question": "Wer ist die wettbewerbsfähigste Person hier?"
+    },
+    {
+      "id": 71,
+      "question": "Was ist der beste Weihnachtsfilm?"
+    },
+    {
+      "id": 72,
+      "question": "Nenne die schlechteste Halloween-Kostüm-Idee."
+    },
+    {
+      "id": 73,
+      "question": "Was ist das beste Weihnachtsessen?"
+    },
+    {
+      "id": 74,
+      "question": "Was ist das schlechteste Weihnachtslied?"
+    },
+    {
+      "id": 75,
+      "question": "Nenne einen Feiertag, den du loswerden möchtest."
+    },
+    {
+      "id": 76,
+      "question": "Was ist das Beste am Sommer?"
+    },
+    {
+      "id": 77,
+      "question": "Was ist das Schlimmste am Winter?"
+    },
+    {
+      "id": 78,
+      "question": "Nenne das beste Geschenk, das du jemandem geben kannst."
+    },
+    {
+      "id": 79,
+      "question": "Was ist die nervigste Weihnachtstradition?"
+    },
+    {
+      "id": 80,
+      "question": "Was ist der beste Feiertag zum Feiern?"
+    },
+    {
+      "id": 81,
+      "question": "Was ist das beste Brettspiel?"
+    },
+    {
+      "id": 82,
+      "question": "Was ist der schlechteste Sport zum Zuschauen?"
+    },
+    {
+      "id": 83,
+      "question": "Was ist das beste Videospiel aller Zeiten?"
+    },
+    {
+      "id": 84,
+      "question": "Nenne das überbewerteste Sportteam."
+    },
+    {
+      "id": 85,
+      "question": "Was ist der beste Sport zum Spielen mit Freunden?"
+    },
+    {
+      "id": 86,
+      "question": "Was ist das schlechteste olympische Event?"
+    },
+    {
+      "id": 87,
+      "question": "Nenne eine Sportart, die nicht existieren sollte."
+    },
+    {
+      "id": 88,
+      "question": "Was ist der beste Sport zum Live-Zuschauen?"
+    },
+    {
+      "id": 89,
+      "question": "Wer ist der beste Athlet aller Zeiten?"
+    },
+    {
+      "id": 90,
+      "question": "Was ist die spaßigste Outdoor-Aktivität?"
+    },
+    {
+      "id": 91,
+      "question": "Was ist die beste Erfindung aller Zeiten?"
+    },
+    {
+      "id": 92,
+      "question": "Was ist das Schlimmste am Erwachsensein?"
+    },
+    {
+      "id": 93,
+      "question": "Nenne das beste Jahrzehnt zum Leben."
+    },
+    {
+      "id": 94,
+      "question": "Was ist der schlechteste Rat, den du je erhalten hast?"
+    },
+    {
+      "id": 95,
+      "question": "Was ist das Beste, was man an einem faulen Sonntag machen kann?"
+    },
+    {
+      "id": 96,
+      "question": "Nenne den schlechtesten Trend aller Zeiten."
+    },
+    {
+      "id": 97,
+      "question": "Was ist die beste Ausrede für Verspätung?"
+    },
+    {
+      "id": 98,
+      "question": "Was ist der schlechteste Weg, 1.000 $ auszugeben?"
+    },
+    {
+      "id": 99,
+      "question": "Nenne das beste Tier als Haustier."
+    },
+    {
+      "id": 100,
+      "question": "Was ist das Beste am Leben?"
+    },
+    {
+      "id": 101,
+      "question": "Was ist der beste Chips-Geschmack?"
+    },
+    {
+      "id": 102,
+      "question": "Was ist der langweiligste Sport zum Live-Zuschauen?"
+    },
+    {
+      "id": 103,
+      "question": "Nenne ein sehr kaltes Land."
+    },
+    {
+      "id": 104,
+      "question": "Nenne die größte Frucht, die du ganz in den Mund nehmen kannst, ohne sie zu schneiden."
+    },
+    {
+      "id": 105,
+      "question": "Wärst du lieber die reichste Person der Welt oder die klügste?"
+    },
+    {
+      "id": 106,
+      "question": "Nenne eines von Santa's Rentieren. (Nicht Rudolph)."
+    },
+    {
+      "id": 107,
+      "question": "Hättest du lieber eine Statue von dir oder ein Gemälde von dir?"
+    },
+    {
+      "id": 108,
+      "question": "Was ist das klebrigste Essen?"
+    },
+    {
+      "id": 109,
+      "question": "Was ist der beste Weihnachtsfilm?"
+    },
+    {
+      "id": 110,
+      "question": "Nenne einen Beruf, der mit B beginnt."
+    },
+    {
+      "id": 111,
+      "question": "Nenne ein Tier, das keinen Schwanz hat."
+    },
+    {
+      "id": 112,
+      "question": "Wie viele Big Macs könnte eine normale Person in 20 Minuten essen?"
+    },
+    {
+      "id": 113,
+      "question": "Um welche Uhrzeit wird Frühstück zu Mittagessen?"
+    },
+    {
+      "id": 114,
+      "question": "Was ist dein liebstes Küchengerät?"
+    },
+    {
+      "id": 115,
+      "question": "Nenne eine Film-Trilogie."
+    },
+    {
+      "id": 116,
+      "question": "Wenn du den Sprechenden Hut manipulieren könntest, welches Hogwarts-Haus würdest du wählen?"
+    },
+    {
+      "id": 117,
+      "question": "Was wäre die beste Gameshow, an der man teilnehmen könnte?"
+    },
+    {
+      "id": 118,
+      "question": "Nenne einen der Sieben Zwerge."
+    },
+    {
+      "id": 119,
+      "question": "Was ist der beste Raum im Haus?"
+    },
+    {
+      "id": 120,
+      "question": "Was ist der beste Disney-Film aller Zeiten?"
+    },
+    {
+      "id": 121,
+      "question": "Nenne einen berühmten Vogel."
+    },
+    {
+      "id": 122,
+      "question": "Nenne ein Insekt, das nicht fliegen kann."
+    },
+    {
+      "id": 123,
+      "question": "Nenne eine Insel im Mittelmeer."
+    },
+    {
+      "id": 124,
+      "question": "Nenne den besten Kneipen-Sport."
+    },
+    {
+      "id": 125,
+      "question": "Was ist die beste Textmarker-Farbe?"
+    },
+    {
+      "id": 126,
+      "question": "Was ist das Beste, womit man eine Olive füllen kann?"
+    },
+    {
+      "id": 127,
+      "question": "Was ist der beste Gelee-Geschmack?"
+    },
+    {
+      "id": 128,
+      "question": "Nenne ein Tier ohne Schwanz."
+    },
+    {
+      "id": 129,
+      "question": "Was ist die beste Sauce für Pommes?"
+    },
+    {
+      "id": 130,
+      "question": "Nenne etwas, was du am Strand machen würdest."
+    },
+    {
+      "id": 131,
+      "question": "Nenne einen Vogel, der nicht fliegt."
+    },
+    {
+      "id": 132,
+      "question": "Bester Streaming-Dienst."
+    },
+    {
+      "id": 133,
+      "question": "Was ist das beste Schulhof-Spiel?"
+    },
+    {
+      "id": 134,
+      "question": "Würdest du lieber in der Stadt, auf dem Land oder am Meer leben?"
+    },
+    {
+      "id": 135,
+      "question": "Sweatshirt oder Hoodie?"
+    },
+    {
+      "id": 136,
+      "question": "Nenne einen Instant-Nudel-Geschmack."
+    },
+    {
+      "id": 137,
+      "question": "Wenn du eine Kartoffel als Haustier hättest, wie würdest du sie nennen?"
+    },
+    {
+      "id": 138,
+      "question": "Bestes Essen aus Frankreich."
+    },
+    {
+      "id": 139,
+      "question": "Stilles, sprudelndes oder Leitungswasser?"
+    },
+    {
+      "id": 140,
+      "question": "Wie viele Chicken Nuggets könntest du in 1 Minute essen?"
+    }
+  ]
+}
