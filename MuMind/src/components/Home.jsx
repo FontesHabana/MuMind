@@ -76,31 +76,7 @@ export default function Home(){
  width="71px" height="86px">
 <image className=" h-10"  xlink:href="data:img/png;base64,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" />
 </svg>
-            {/*
-         <div className="absolute w-16 h-20 sm:w-20 sm:h-24 lg:w-24 lg:h-28 bg-black opacity-100 rounded-[70%_50%_60%_80%] top-8 left-4 sm:top-12 sm:left-8 lg:top-16 lg:left-12"></div>
-            <div className="absolute w-12 h-16 sm:w-14 sm:h-18 lg:w-16 lg:h-20 bg-black opacity-100 rounded-[80%_40%_90%_50%] top-24 left-16 sm:top-32 sm:left-24 lg:top-40 lg:left-32"></div>
-            <div className="absolute w-8 h-12 sm:w-10 sm:h-14 lg:w-12 lg:h-16 bg-black opacity-100 rounded-[60%_90%_40%_70%] top-16 left-28 sm:top-20 sm:left-40 lg:top-24 lg:left-56"></div>
-
-            
-            <div className="absolute w-20 h-24 sm:w-24 sm:h-28 lg:w-28 lg:h-32 bg-black opacity-100 rounded-[50%_80%_70%_40%] top-6 right-4 sm:top-10 sm:right-8 lg:top-12 lg:right-16"></div>
-            <div className="absolute w-14 h-18 sm:w-16 sm:h-20 lg:w-18 lg:h-22 bg-black opacity-100 rounded-[90%_60%_50%_80%] top-20 right-20 sm:top-28 sm:right-32 lg:top-36 lg:right-48"></div>
-
-            
-            <div className="absolute w-18 h-22 sm:w-20 sm:h-24 lg:w-24 lg:h-28 bg-black opacity-100 rounded-[40%_80%_60%_90%] bottom-16 left-8 sm:bottom-20 sm:left-12 lg:bottom-24 lg:left-20"></div>
-            <div className="absolute w-10 h-14 sm:w-12 sm:h-16 lg:w-14 lg:h-18 bg-black opacity-100 rounded-[70%_50%_80%_60%] bottom-32 left-2 sm:bottom-40 sm:left-4 lg:bottom-48 lg:left-8"></div>
-            <div className="absolute w-6 h-10 sm:w-8 sm:h-12 lg:w-10 lg:h-14 bg-black opacity-100 rounded-[90%_40%_70%_50%] bottom-24 left-24 sm:bottom-32 sm:left-36 lg:bottom-40 lg:left-52"></div>
-
-          
-            <div className="absolute w-16 h-20 sm:w-18 sm:h-22 lg:w-22 lg:h-26 bg-black opacity-100 rounded-[60%_70%_50%_80%] bottom-12 right-6 sm:bottom-16 sm:right-10 lg:bottom-20 lg:right-18"></div>
-            <div className="absolute w-12 h-16 sm:w-14 sm:h-18 lg:w-16 lg:h-20 bg-black opacity-100 rounded-[80%_60%_90%_40%] bottom-28 right-16 sm:bottom-36 sm:right-28 lg:bottom-44 lg:right-40"></div>
-
-          
-            <div className="hidden lg:block absolute w-20 h-24 bg-black opacity-100 rounded-[50%_90%_60%_70%] top-1/3 left-16"></div>
-            <div className="hidden lg:block absolute w-14 h-18 bg-black opacity-100 rounded-[80%_50%_40%_90%] top-1/2 right-20"></div>
-            <div className="hidden lg:block absolute w-10 h-14 bg-black opacity-100 rounded-[70%_60%_80%_50%] bottom-1/3 left-1/4"></div>
-            <div className="hidden lg:block absolute w-16 h-20 bg-black opacity-100 rounded-[40%_80%_60%_70%] bottom-1/4 right-1/3"></div>
-
-            {/* Contenido principal - Con z-index alto para estar encima */}
+         
             <div className="relative z-10 min-h-screen flex flex-col justify-center lg:justify-start lg:pt-32 items-center gap-8 px-4">
                 {/*Titulo*/}
                 <div>
@@ -109,9 +85,9 @@ export default function Home(){
                 
 
                 {/*Button*/}
-                <button className="bg-pink-500 text-white font-bold text-2xl lg:text-3xl lg:px-8 lg:py-4 px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md"> New Game</button>
+                <button className="bg-pink-500 text-white font-bold text-2xl lg:text-3xl lg:px-8 lg:py-4 px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer"> New Game</button>
 
-                <button className="bg-pink-500 text-white font-bold text-2xl lg:text-3xl lg:px-8 lg:py-4 px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md">How to play</button>
+                <button className="bg-pink-500 text-white font-bold text-2xl lg:text-3xl lg:px-8 lg:py-4 px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">How to play</button>
 
                 <div className="absolute top-0 right-0">
 <SettingsModal/>
