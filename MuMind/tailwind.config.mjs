@@ -23,6 +23,7 @@ module.exports= {
       fontFamily: {
         'akzidenz': ['Oswald', 'Work Sans', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
+     
     
 
     },
