@@ -2,7 +2,7 @@ import SettingsModal from "./Settings";
 import HowToPlay from "./HowToPlay";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-export default function Home() {
+export default function Home({onStart}) {
     const [openSettings, setOpenSettings] = useState(false);
     const [openHowToPlay, setOpenHowToPlay] = useState(false);
     const isAnyModalOpen = openSettings || openHowToPlay;
@@ -93,7 +93,7 @@ export default function Home() {
 
 
                 {/*Button*/}
-                <button className="bg-pink-500 text-white font-bold text-2xl lg:text-3xl lg:px-8 lg:py-4 px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer"> New Game</button>
+                <button onClick={onStart} className="bg-pink-500 text-white font-bold text-2xl lg:text-3xl lg:px-8 lg:py-4 px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer"> New Game</button>
 
                 {!isAnyModalOpen && (
                     <motion.button onClick={() => setOpenHowToPlay(true)} className="bg-pink-500 text-white font-bold text-2xl lg:text-3xl lg:px-8 lg:py-4 px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer"
