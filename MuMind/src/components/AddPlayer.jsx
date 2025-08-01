@@ -27,6 +27,10 @@ export default function AddPlayerModal({onClose,onAddPlayer}) {
         setError('Please insert a valid name');
         return;
     }
+    if (playerName.length<3||playerName.length>10) {
+        setError('Please insert a valid name');
+        return;
+    }
     if (!selectedAvatar) {
         setError('Please select a avatar');
         return;
