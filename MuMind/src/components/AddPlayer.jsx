@@ -13,7 +13,7 @@ const avatarOptions=[
 ]
 
 
-export default function AddPlayerModal({onClose,onAddPlayer}) {
+export default function AddPlayerModal({onClose,onAddPlayer,players}) {
 
   const [playerName, setPlayerName]=useState('');
   const [selectedAvatar, setSelectedAvatar]=useState(avatarOptions[0]);
@@ -29,6 +29,10 @@ export default function AddPlayerModal({onClose,onAddPlayer}) {
     }
     if (playerName.length<3||playerName.length>10) {
         setError('Please insert a valid name');
+        return;
+    }
+    if (players.some(player=>player.name===playerName)) {
+        setError('This name already exits in the game');
         return;
     }
     if (!selectedAvatar) {
