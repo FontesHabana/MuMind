@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Home  from "./Home";
 import LobbyScreen from "./Lobby";
+import GameManager from "./GameManager";
 export default function Game(){
    const [currentScreen,setCurrentScreen]=useState('welcome');
    const [players, setPlayers]=useState([]);
@@ -17,9 +18,19 @@ export default function Game(){
                     <LobbyScreen
                     players={players}
                     setPlayers={setPlayers}
-                    onStartGame={()=>{return true}}
+                    onStartGame={()=>setCurrentScreen('gameManager')}
                     onExit ={()=> setCurrentScreen('welcome')}/>
-                )
+                );
+            case 'gameManager':
+                return(
+                    <GameManager
+                    
+                    players={players}
+                    setPlayers={setPlayers}
+                    onEnd={()=>setCurrentScreen('welcome')}
+                    onNewGame={()=>setCurrentScreen('lobby')}
+                    />
+                     );
         }
     }
 

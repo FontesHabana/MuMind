@@ -14,7 +14,11 @@ export default function LobbyScreen({players, setPlayers, onStartGame, onExit}){
         setTimeout(()=>{
             onExit();
         },150);    }
-
+    function newGame(){
+        if (players.length>0) {
+            onStartGame();
+        }
+    }
 
     return(
       
@@ -45,7 +49,9 @@ export default function LobbyScreen({players, setPlayers, onStartGame, onExit}){
                             {player.name}
                         </p>
                         </div>
-                        <button onClick={()=>{removePlayer(player.id)}} className='w-5 h-5 bg-red-500 mr-2  transition-transform duration-300 ease-in.out transform hover:scale-110 hover:cursor-pointer'></button>
+                        <button onClick={()=>{removePlayer(player.id)}} className=' mr-2  transition-transform duration-300 ease-in.out transform hover:scale-110 hover:cursor-pointer'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 1024 1024"><path fill="#ff0000" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"/></svg>
+                        </button>
                     </div>
                     
                 ))}
@@ -54,7 +60,7 @@ export default function LobbyScreen({players, setPlayers, onStartGame, onExit}){
            <div className='mt-auto w-[80%] flex flex-wrap  justify-center items-center'> 
                  <button onClick={()=> setShowAddPlayerModal(true)} className="bg-pink-500 m-2 mt-auto text-center w-[25%] min-w-40 whitespace-nowrap  text-white font-bold text-1xl lg:text-2xl  lg:px-6 lg:py-2 px-5 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">Add Player</button>
            {/*Añadir logica inicio */}
-           <button  className="bg-pink-500 m-2 w-[25%] min-w-40 whitespace-nowrap text-white font-bold text-1xl lg:text-2xl  lg:px-6 lg:py-2 px-5 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">Start Game</button>
+           <button onClick={newGame}  className="bg-pink-500 m-2 w-[25%] min-w-40 whitespace-nowrap text-white font-bold text-1xl lg:text-2xl  lg:px-6 lg:py-2 px-5 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">Start Game</button>
 
            <button onClick={exitComponent} className="bg-pink-500 m-2 w-[25%] min-w-40 text-white font-bold text-1xl lg:text-2xl  lg:px-6 lg:py-2 px-5 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">Exit</button>
            </div>

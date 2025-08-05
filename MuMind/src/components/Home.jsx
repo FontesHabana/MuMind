@@ -7,7 +7,7 @@ export default function Home({onStart}) {
     const [openHowToPlay, setOpenHowToPlay] = useState(false);
     const isAnyModalOpen = openSettings || openHowToPlay;
     return (
-        <div className="min-h-screen bg-transparent relative overflow-hidden">
+        <div className="h-screen bg-transparent relative overflow-hidden">
            
             <AnimatePresence>
             <motion.div 
@@ -15,17 +15,17 @@ export default function Home({onStart}) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="relative z-10 min-h-screen flex flex-col justify-center lg:justify-start lg:pt-32 items-center gap-8 p-5">
+            className="relative z-10 h-screen flex flex-col justify-center lg:justify-center  items-center gap-8 p-5">
                 {/*Titulo*/}
                 <div>
-                    <h1 className="font-akzidenz  bg-white text-purple-900 mt-10 font-bold text-center rounded-3xl px-2 pb-3 " >
+                    <h1 className="font-akzidenz  bg-white text-purple-900  font-bold text-center rounded-3xl px-2 pb-3 " >
                         <span className="text-7xl sm:text-9xl lg:text-[10rem] p-0 m-0">HERD</span>
                         <br />
                         <span className="text-4xl sm:text-6xl lg:text-7xl p-0 m-0">MENTALITY</span>
                     </h1>
                 </div>
 
-
+                
                 {/*Button*/}
                 <button onClick={onStart} className="bg-pink-500 text-white font-bold text-2xl lg:text-3xl lg:px-8 lg:py-4 px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer"> New Game</button>
 
