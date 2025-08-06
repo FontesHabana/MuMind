@@ -2,6 +2,7 @@ import {useState} from 'react';
 import { useEffect } from 'react';
 import { motion, AnimatePresence, degrees } from "framer-motion";
 import { div, p } from "framer-motion/client";
+import Timer from './Timer';
 
   const cardBase=[
    
@@ -30,6 +31,7 @@ import { div, p } from "framer-motion/client";
 export default function QuestionCard(props ){
     const [isVisible,setIsVisible]=useState(true);
     const [count, setCount]=useState(3);
+    const[showTimer,setShowTimer]=useState(false);
     const[flipped,setFlipped]=useState(false);
 
   
@@ -63,12 +65,13 @@ console.log("no es un array");
       return()=>clearTimeout(timer);
     }
     else{
+      setShowTimer(true);
       setFlipped(true);
          
        const timeOut=setTimeout(()=>{
       props.onFlipComplete();
       
-    },6000);
+    },61000);
     return ()=> clearTimeout(timeOut);
     }
   },[count, props.onFlipComplete]);
@@ -83,6 +86,11 @@ console.log("no es un array");
 
 
     return(
+<>
+    {showTimer&& <div className='absolute top-0 right-0'>
+                  <Timer />
+                 </div>}
+
       <div className="perspective-1000" style={{ perspective: '1000px' }}>
         <motion.div 
           className="relative w-[90vw] h-[45vw] rounded-3xl m-2 sm:w-[80vw] sm:h-[40vw] lg:w-[60vw] lg:h-[30vw]"
@@ -146,5 +154,6 @@ console.log("no es un array");
   
         </motion.div>
       </div>
+      </>
     );
 }

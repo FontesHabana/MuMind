@@ -3,6 +3,7 @@ import React from 'react';
 import { motion, AnimatePresence, degrees } from "framer-motion";
 import QuestionCard from './QuestionCard';
 import ScoreBoard from './ScoreBoard';
+import Timer from './Timer';
 import { div } from "framer-motion/client";
 import data from '../data/questions.json'
 
@@ -45,7 +46,10 @@ console.log("no es un array");
                   onFlipComplete={()=>{setShowCardQuestion(false);
                    
                   }}
-                 />):
+                 />
+             
+                
+                ):
                  (<ScoreBoard
                   players={players}
                   setPlayers={setPlayers}
