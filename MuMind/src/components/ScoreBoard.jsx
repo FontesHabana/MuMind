@@ -91,15 +91,41 @@ export default function ScoreBoard({players,setPlayers, onNewRound, onExit, onNe
                         </p>
                         </div>
                         <p className='ml-auto mr-3 text-2xl sm:text-3xl lg:text-4xl'>{player.points}</p>
-                        <div className='flex flex-col  justify-center items-center'>
+                        <div className='flex flex-col mt-2  justify-center items-center'>
                          <button onClick={()=>{addPoint(player.id)}} className='self-center   transition-transform duration-300 ease-in.out transform hover:scale-110 hover:cursor-pointer'>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="lg:w-[25px] lg:h-[25px] w-[20px] h-[20px]"  viewBox="0 0 1024 1024"><path fill="#ff0000" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"/></svg>
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg"className="lg:w-[25px] lg:h-[25px] w-[20px] h-[20px]" viewBox="0 0 24 24">
+
+<title/>
+
+<g id="Complete">
+
+<g data-name="add" id="add-2">
+
+<g>
+
+<line fill="none" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="19" y2="5"/>
+
+<line fill="none" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="5" x2="19" y1="12" y2="12"/>
+
+</g>
+
+</g>
+
+</g>
+
+</svg>
+                          
+                   
                         </button>
                          <button onClick={()=>{removePoint(player.id)}} className='self-center   transition-transform duration-300 ease-in.out transform hover:scale-110 hover:cursor-pointer'>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="lg:w-[25px] lg:h-[25px] w-[20px] h-[20px]"  viewBox="0 0 1024 1024"><path fill="#ff0000" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"/></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" className="lg:w-[25px] lg:h-[25px] w-[20px] h-[20px]" viewBox="0 0 24 24" fill="none">
+<path d="M7 12L17 12" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      
                         </button>
                         </div>
-                      
+                     
                     </div>
                     
                 ))}
