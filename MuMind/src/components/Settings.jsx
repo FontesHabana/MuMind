@@ -69,8 +69,8 @@ export default function SettingsModal({open,setOpen}) {
     </motion.ul>
   )}
 </AnimatePresence>
-              </div>
-                    <div className="flex flex-col gap-4 text-2xl">
+            </div>
+                   {/*   <div className="flex flex-col gap-4 text-2xl">
                         <motion.button 
                             className=" py-2 rounded-xl hover:bg-pink-300"
                             whileHover={{ scale: 1.02 }}
@@ -92,7 +92,7 @@ export default function SettingsModal({open,setOpen}) {
                         >
                             Option3
                         </motion.button>
-                    </div>
+                    </div>*/}
               {/* ✅ Botón cerrar */}
               <motion.button
                 onClick={() => setOpen(false)}
