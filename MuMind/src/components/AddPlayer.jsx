@@ -3,12 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { div, image } from "framer-motion/client";
 
 const avatarOptions=[
-    'avatar1.png',
-    'avatar2.png',
-    'avatar2.png',
-    'avatar2.png',
-    'avatar2.png',
-    'avatar2.png',
+    'avatar1.webp',
+    'avatar2.webp',
+    'avatar3.webp',
+    'avatar4.webp',
+    'avatar5.webp',
+    'avatar6.webp',
 
 ]
 
@@ -54,14 +54,14 @@ export default function AddPlayerModal({onClose,onAddPlayer,players}) {
   };
 
   return (
-    <div className="relative  flex flex-col items-center justify-center bg-azul-cielo">
+    <div className="relative   flex flex-col items-center justify-center bg-azul-cielo">
      
 
       {/* ✅ Modal animado */}
       <AnimatePresence>
         {open && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
+            className="fixed inset-0 z-50 flex items-center justify-center  bg-black/70 backdrop-blur-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -69,7 +69,7 @@ export default function AddPlayerModal({onClose,onAddPlayer,players}) {
           >
             <motion.div
             onClick={(e)=>e.stopPropagation()}
-              className="h-[95vh] bg-white mt-2 mx-2 overflow-y-auto rounded-xl shadow-lg p-8 w-96  text-center sm:w-[28rem]"
+              className="h-[80vh] bg-white  mx-2 overflow-y-auto rounded-xl shadow-lg p-8 w-96  text-center sm:w-[28rem]"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
