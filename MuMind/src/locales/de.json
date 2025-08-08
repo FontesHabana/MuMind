@@ -1,0 +1,72 @@
+{
+  "general": {
+    "select": "Auswählen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "start": "Starten",
+    "finish": "Beenden",
+    "score": "Punktzahl",
+    "language": "Sprache"
+  },
+  "home": {
+    "title": "MuMind",
+    "subtitle": "Fragen und Antworten Spiel",
+    "play": "Spielen",
+    "howToPlay": "Wie man spielt",
+    "settings": "Einstellungen"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "selectLanguage": "Wählen Sie Ihre Sprache",
+    "english": "Englisch",
+    "spanish": "Spanisch",
+    "french": "Französisch",
+    "german": "Deutsch",
+    "close": "Schließen"
+  },
+  "howToPlay": {
+    "title": "Wie man spielt",
+    "instructions": [
+      "1. Fügen Sie Spieler zum Spiel hinzu",
+      "2. Wählen Sie die Anzahl der Runden",
+      "3. Beantworten Sie Fragen schnell",
+      "4. Verdienen Sie Punkte für richtige Antworten",
+      "5. Der Spieler mit den meisten Punkten gewinnt!"
+    ]
+  },
+  "lobby": {
+    "title": "Spiel-Setup",
+    "addPlayer": "Spieler hinzufügen",
+    "playerName": "Spielername",
+    "rounds": "Runden",
+    "players": "Spieler",
+    "startGame": "Spiel starten",
+    "minPlayers": "Mindestens 2 Spieler sind erforderlich"
+  },
+  "game": {
+    "round": "Runde",
+    "of": "von",
+    "question": "Frage",
+    "timeUp": "Zeit ist um!",
+    "correct": "Richtig!",
+    "incorrect": "Falsch",
+    "nextRound": "Nächste Runde",
+    "finishGame": "Spiel beenden"
+  },
+  "results": {
+    "title": "Endergebnisse",
+    "winner": "Gewinner!",
+    "finalScores": "Endpunktzahlen",
+    "playAgain": "Nochmal spielen",
+    "backToHome": "Zurück zum Start"
+  },
+  "timer": {
+    "seconds": "Sekunden"
+  },
+  "scoreBoard": {
+    "title": "Punktetafel",
+    "pinkCow": "Rosa Kuh",
+    "removePinkCow": "Rosa Kuh entfernen"
+  }
+}

@@ -39,24 +39,38 @@ export default function QuestionCard(props ){
     const RandomSvg=cardBase[RandomIndex];
 
     const [randomQuestion,setRandomQuestion]=useState(null);
+    const [hasSelectedQuestion, setHasSelectedQuestion] = useState(false);
     
     const SelectAndRemoveQuestion=()=>{
+      // Verificar que props.questions existe y tiene elementos
+      if (!props.questions || !Array.isArray(props.questions) || props.questions.length === 0) {
+        console.log('Questions no disponibles aún:', props.questions);
+        return;
+      }
+      
+      // Solo seleccionar una vez
+      if (hasSelectedQuestion) {
+        return;
+      }
+      
       const index=Math.floor(Math.random()*props.questions.length);
       const questionSelected=props.questions[index];
       setRandomQuestion(questionSelected);
-      if (Array.isArray(props.questions)) {
-        console.log("es un array");
-      }
-      else{
-console.log("no es un array");
-      }
+      setHasSelectedQuestion(true);
+      console.log('Pregunta seleccionada:', questionSelected);
+      
       const newQuestions=props.questions.filter((_,i)=>i!==index);
       props.setQuestions(newQuestions);
     
   };
 
 
-  useEffect(()=>{SelectAndRemoveQuestion()},[]);
+  useEffect(()=>{
+    // Solo ejecutar cuando las preguntas estén disponibles y no hayamos seleccionado aún
+    if (props.questions && props.questions.length > 0 && !hasSelectedQuestion) {
+      SelectAndRemoveQuestion();
+    }
+  },[props.questions, hasSelectedQuestion]);
 
   useEffect(()=>{
 
@@ -67,6 +81,7 @@ console.log("no es un array");
     else{
       setShowTimer(true);
       setFlipped(true);
+      console.log('FLIP ACTIVADO - flipped:', true, 'randomQuestion:', randomQuestion);
          
        const timeOut=setTimeout(()=>{
       props.onFlipComplete();
@@ -95,10 +110,10 @@ console.log("no es un array");
         <motion.div 
           className="relative w-[90vw] h-[45vw] rounded-3xl m-2 sm:w-[80vw] sm:h-[40vw] lg:w-[60vw] lg:h-[30vw]"
           style={{ transformStyle: 'preserve-3d' }}
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0, rotateY: "0deg" }}
           animate={{ 
             opacity: 1,
-            rotateY: flipped ? -180 : 0 
+            rotateY: flipped ? "180deg" : "0deg"
           }}
           transition={{ 
             opacity: { duration: 0.3 },

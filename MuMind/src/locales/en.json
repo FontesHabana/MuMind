@@ -1,0 +1,72 @@
+{
+  "general": {
+    "select": "Select",
+    "back": "Back",
+    "next": "Next",
+    "start": "Start",
+    "finish": "Finish",
+    "score": "Score",
+    "language": "Language"
+  },
+  "home": {
+    "title": "MuMind",
+    "subtitle": "Question and Answer Game",
+    "play": "Play",
+    "howToPlay": "How to Play",
+    "settings": "Settings"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "selectLanguage": "Select your language",
+    "english": "English",
+    "spanish": "Spanish",
+    "french": "French",
+    "german": "German",
+    "close": "Close"
+  },
+  "howToPlay": {
+    "title": "How to Play",
+    "instructions": [
+      "1. Add players to the game",
+      "2. Select the number of rounds",
+      "3. Answer questions quickly",
+      "4. Earn points for correct answers",
+      "5. The player with the most points wins!"
+    ]
+  },
+  "lobby": {
+    "title": "Game Setup",
+    "addPlayer": "Add Player",
+    "playerName": "Player name",
+    "rounds": "Rounds",
+    "players": "Players",
+    "startGame": "Start Game",
+    "minPlayers": "At least 2 players are required"
+  },
+  "game": {
+    "round": "Round",
+    "of": "of",
+    "question": "Question",
+    "timeUp": "Time's up!",
+    "correct": "Correct!",
+    "incorrect": "Incorrect",
+    "nextRound": "Next Round",
+    "finishGame": "Finish Game"
+  },
+  "results": {
+    "title": "Final Results",
+    "winner": "Winner!",
+    "finalScores": "Final Scores",
+    "playAgain": "Play Again",
+    "backToHome": "Back to Home"
+  },
+  "timer": {
+    "seconds": "seconds"
+  },
+  "scoreBoard": {
+    "title": "Scoreboard",
+    "pinkCow": "Pink Cow",
+    "removePinkCow": "Remove Pink Cow"
+  }
+}

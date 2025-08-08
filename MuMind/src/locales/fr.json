@@ -1,0 +1,72 @@
+{
+  "general": {
+    "select": "Sélectionner",
+    "back": "Retour",
+    "next": "Suivant",
+    "start": "Commencer",
+    "finish": "Terminer",
+    "score": "Score",
+    "language": "Langue"
+  },
+  "home": {
+    "title": "MuMind",
+    "subtitle": "Jeu de Questions et Réponses",
+    "play": "Jouer",
+    "howToPlay": "Comment Jouer",
+    "settings": "Paramètres"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": "Langue",
+    "selectLanguage": "Sélectionnez votre langue",
+    "english": "Anglais",
+    "spanish": "Espagnol",
+    "french": "Français",
+    "german": "Allemand",
+    "close": "Fermer"
+  },
+  "howToPlay": {
+    "title": "Comment Jouer",
+    "instructions": [
+      "1. Ajoutez des joueurs à la partie",
+      "2. Sélectionnez le nombre de tours",
+      "3. Répondez rapidement aux questions",
+      "4. Gagnez des points pour les bonnes réponses",
+      "5. Le joueur avec le plus de points gagne !"
+    ]
+  },
+  "lobby": {
+    "title": "Configuration de la Partie",
+    "addPlayer": "Ajouter un Joueur",
+    "playerName": "Nom du joueur",
+    "rounds": "Tours",
+    "players": "Joueurs",
+    "startGame": "Commencer le Jeu",
+    "minPlayers": "Au moins 2 joueurs sont requis"
+  },
+  "game": {
+    "round": "Tour",
+    "of": "de",
+    "question": "Question",
+    "timeUp": "Temps écoulé !",
+    "correct": "Correct !",
+    "incorrect": "Incorrect",
+    "nextRound": "Tour Suivant",
+    "finishGame": "Terminer le Jeu"
+  },
+  "results": {
+    "title": "Résultats Finaux",
+    "winner": "Gagnant !",
+    "finalScores": "Scores Finaux",
+    "playAgain": "Rejouer",
+    "backToHome": "Retour à l'Accueil"
+  },
+  "timer": {
+    "seconds": "secondes"
+  },
+  "scoreBoard": {
+    "title": "Tableau des Scores",
+    "pinkCow": "Vache Rose",
+    "removePinkCow": "Retirer la Vache Rose"
+  }
+}

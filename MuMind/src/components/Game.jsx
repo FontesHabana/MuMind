@@ -2,6 +2,8 @@ import { useState } from "react";
 import Home  from "./Home";
 import LobbyScreen from "./Lobby";
 import GameManager from "./GameManager";
+import { LanguageProvider } from "../contexts/LanguageContext";
+
 export default function Game(){
    const [currentScreen,setCurrentScreen]=useState('welcome');
    const [players, setPlayers]=useState([]);
@@ -36,6 +38,7 @@ export default function Game(){
 
 
    return(
+    <LanguageProvider>
     <div className="relative min-h-screen z-0   overflow-hidden bg-white">
          {/*Left*/}
             <svg className="-z-10 absolute -left-1 top-10 sm:top-10 -z-10 -sm:left-1 lg:top-0 lg:-left-1"
@@ -111,5 +114,6 @@ export default function Game(){
             </svg>
         {renderScreen()}
     </div>
+   </LanguageProvider>
    )
 }

@@ -1,16 +1,19 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function SettingsModal({open,setOpen}) {
-
-  const [selectedLanguage, setSelectedLanguage] = useState("English");
+  const { t, changeLanguage, currentLanguage, availableLanguages } = useLanguage();
   const [showOptions, setShowOptions] = useState(false);
 
-  const availableLanguages = ["Spanish", "English", "French","Deutch"];
+  const getCurrentLanguageName = () => {
+    const current = availableLanguages.find(lang => lang.code === currentLanguage);
+    return current ? current.name : availableLanguages[1].name; // fallback to English
+  };
 
-  const handleSelect = (lang) => {
-    setSelectedLanguage(lang);
-    setShowOptions(false); // Oculta el menú después de elegir
+  const handleSelect = (langCode) => {
+    changeLanguage(langCode);
+    setShowOptions(false);
   };
 
   return (
@@ -34,7 +37,7 @@ export default function SettingsModal({open,setOpen}) {
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
             >
-              <h2 className="text-3xl font-bold mb-6">Settings</h2>
+              <h2 className="text-3xl font-bold mb-6">{t("settings.title")}</h2>
 
               {/* ✅ Dropdown Idioma */}
               <div className="mb-2 text-center relative">
@@ -43,7 +46,7 @@ export default function SettingsModal({open,setOpen}) {
   onClick={() => setShowOptions(!showOptions)}
   className="flex justify-center items-center bg-white p-3 rounded-xl cursor-pointer text-2xl py-2 hover:bg-pink-300 cursor-pointer "
 >
-  <span className="text-center font-semibold">{selectedLanguage}</span>
+  <span className="text-center font-semibold">{getCurrentLanguageName()}</span>
                
                 </div>
 
@@ -59,11 +62,11 @@ export default function SettingsModal({open,setOpen}) {
     >
       {availableLanguages.map((lang) => (
         <li
-          key={lang}
-          onClick={() => handleSelect(lang)}
+          key={lang.code}
+          onClick={() => handleSelect(lang.code)}
           className="px-4 py-2 text-2xl text-center hover:bg-pink-300 cursor-pointer rounded-lg"
         >
-          {lang}
+          {lang.name}
         </li>
       ))}
     </motion.ul>

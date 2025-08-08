@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { div } from "framer-motion/client";
+import { useLanguage } from '../contexts/LanguageContext';
+
 export default function HowToPlay({open,setOpen}){
+    const { t } = useLanguage();
     return(
         <>
      
@@ -21,7 +23,7 @@ export default function HowToPlay({open,setOpen}){
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeOut" }}>
-                <h2 className="text-3xl font-bold mb-4">How to play</h2>
+                <h2 className="text-3xl font-bold mb-4">{t("howToPlay.title")}</h2>
                 <p className="text-[1.5rem] mb-6 text-left">
                     1.
 First you’ll need a pen and paper, for keeping score and writing answers. <br />

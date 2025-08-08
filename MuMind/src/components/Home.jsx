@@ -2,7 +2,10 @@ import SettingsModal from "./Settings";
 import HowToPlay from "./HowToPlay";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLanguage } from '../contexts/LanguageContext';
+
 export default function Home({onStart}) {
+    const { t } = useLanguage();
     const [openSettings, setOpenSettings] = useState(false);
     const [openHowToPlay, setOpenHowToPlay] = useState(false);
     const isAnyModalOpen = openSettings || openHowToPlay;
@@ -19,20 +22,20 @@ export default function Home({onStart}) {
                 {/*Titulo*/}
                 <div>
                     <h1 className="font-akzidenz  bg-white text-purple-900  font-bold text-center rounded-3xl px-2 pb-3 " >
-                        <span className="text-7xl sm:text-9xl lg:text-[10rem] p-0 m-0">HERD</span>
+                        <span className="text-7xl sm:text-9xl lg:text-[10rem] p-0 m-0">{t("home.title")}</span>
                         <br />
-                        <span className="text-4xl sm:text-6xl lg:text-7xl p-0 m-0">MENTALITY</span>
+                        <span className="text-4xl sm:text-6xl lg:text-7xl p-0 m-0">{t("home.subtitle")}</span>
                     </h1>
                 </div>
 
                 
                 {/*Button*/}
-                <button onClick={onStart} className="bg-pink-500 text-white font-bold text-2xl lg:text-3xl lg:px-8 lg:py-4 px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer"> New Game</button>
+                <button onClick={onStart} className="bg-pink-500 text-white font-bold text-2xl lg:text-3xl lg:px-8 lg:py-4 px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">{t("home.play")}</button>
 
                 {!isAnyModalOpen && (
                     <motion.button onClick={() => setOpenHowToPlay(true)} className="bg-pink-500 text-white font-bold text-2xl lg:text-3xl lg:px-8 lg:py-4 px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer"
                         whileTap={{ scale: 0.95 }}>
-                        How To Play
+                        {t("home.howToPlay")}
                     </motion.button>
                 )}
 

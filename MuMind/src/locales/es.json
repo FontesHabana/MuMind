@@ -1,0 +1,72 @@
+{
+  "general": {
+    "select": "Selecciona",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "start": "Comenzar",
+    "finish": "Finalizar",
+    "score": "Puntuación",
+    "language": "Idioma"
+  },
+  "home": {
+    "title": "MuMind",
+    "subtitle": "Juego de Preguntas y Respuestas",
+    "play": "Jugar",
+    "howToPlay": "Cómo Jugar",
+    "settings": "Configuración"
+  },
+  "settings": {
+    "title": "Configuración",
+    "language": "Idioma",
+    "selectLanguage": "Selecciona tu idioma",
+    "english": "Inglés",
+    "spanish": "Español",
+    "french": "Francés",
+    "german": "Alemán",
+    "close": "Cerrar"
+  },
+  "howToPlay": {
+    "title": "Cómo Jugar",
+    "instructions": [
+      "1. Agrega jugadores a la partida",
+      "2. Selecciona la cantidad de rondas",
+      "3. Responde las preguntas rápidamente",
+      "4. Gana puntos por respuestas correctas",
+      "5. ¡El jugador con más puntos gana!"
+    ]
+  },
+  "lobby": {
+    "title": "Configurar Partida",
+    "addPlayer": "Agregar Jugador",
+    "playerName": "Nombre del jugador",
+    "rounds": "Rondas",
+    "players": "Jugadores",
+    "startGame": "Iniciar Juego",
+    "minPlayers": "Se necesitan al menos 2 jugadores"
+  },
+  "game": {
+    "round": "Ronda",
+    "of": "de",
+    "question": "Pregunta",
+    "timeUp": "¡Tiempo agotado!",
+    "correct": "¡Correcto!",
+    "incorrect": "Incorrecto",
+    "nextRound": "Siguiente Ronda",
+    "finishGame": "Finalizar Juego"
+  },
+  "results": {
+    "title": "Resultados Finales",
+    "winner": "¡Ganador!",
+    "finalScores": "Puntuaciones Finales",
+    "playAgain": "Jugar de Nuevo",
+    "backToHome": "Volver al Inicio"
+  },
+  "timer": {
+    "seconds": "segundos"
+  },
+  "scoreBoard": {
+    "title": "Marcador",
+    "pinkCow": "Vaca Rosa",
+    "removePinkCow": "Quitar Vaca Rosa"
+  }
+}
