@@ -1,0 +1,52 @@
+# deploy.yml
+
+name: Deploy to GitHub Pages
+
+on:
+  # Se ejecuta cada vez que haces un push a la rama "main"
+  push:
+    branches:
+      - main
+  # Permite ejecutar este workflow manualmente desde la pestaña Actions en GitHub
+  workflow_dispatch:
+
+# Permisos para que la Action pueda desplegar en GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Puedes usar la versión de Node que prefieras
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build your site
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
