@@ -1,4 +1,4 @@
-# deploy.yml
+# .github/workflows/deploy.yml
 
 name: Deploy to GitHub Pages
 
@@ -16,31 +16,40 @@ permissions:
   pages: write
   id-token: write
 
+# Permite un solo despliegue concurrente, cancelando ejecuciones anteriores
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Versión actualizada
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4 # Versión actualizada
         with:
-          node-version: '22' # Puedes usar la versión de Node que prefieras
+          node-version: '18'
           cache: 'npm'
 
       - name: Install dependencies
         run: npm install
 
       - name: Build your site
-        run: npm run build
+        # Asegúrate que el comando de build coincida con tu package.json
+        run: npm run build 
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        # ESTA ES LA ACCIÓN CORRECTA Y MODERNA PARA GITHUB PAGES
+        uses: actions/upload-pages-artifact@v3 
         with:
+          # Sube el contenido de la carpeta 'dist'
           path: ./dist
 
   deploy:
+    # El trabajo de deploy necesita que el de build termine primero
     needs: build
     runs-on: ubuntu-latest
     environment:
@@ -49,4 +58,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4 # Versión actualizada
