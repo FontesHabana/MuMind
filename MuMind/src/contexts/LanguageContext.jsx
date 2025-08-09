@@ -40,8 +40,14 @@ const translations = {
       start: "Iniciar Partida",
       addPlayer: "Agregar Jugador",
       playerName: "Nombre del jugador",
-     exit:"Salir",
-      playAgain: "Jugar de Nuevo"
+      exit: "Salir",
+      playAgain: "Jugar de Nuevo",
+      errors: {
+        validName: "Por favor ingresa un nombre válido",
+        nameLength: "El nombre debe tener entre 3 y 10 caracteres",
+        nameExists: "Este nombre ya existe en el juego",
+        selectAvatar: "Por favor selecciona un avatar"
+      }
     }
   },
   en: {
@@ -83,8 +89,14 @@ const translations = {
       addPlayer: "Add Player",
       playerName: "Player name",
       remove: "Remove",
-      exit:"Exit",
-      playAgain: "Play Again"
+      exit: "Exit",
+      playAgain: "Play Again",
+      errors: {
+        validName: "Please enter a valid name",
+        nameLength: "Name must be between 3 and 10 characters",
+        nameExists: "This name already exists in the game",
+        selectAvatar: "Please select an avatar"
+      }
     }
   },
   fr: {
@@ -125,8 +137,14 @@ const translations = {
       start: "Commencer la Partie",
       addPlayer: "Ajouter Joueur",
       playerName: "Nom du joueur",
-      exit:"Retourner",
-      playAgain: "Rejouer"
+      exit: "Retourner",
+      playAgain: "Rejouer",
+      errors: {
+        validName: "Veuillez entrer un nom valide",
+        nameLength: "Le nom doit contenir entre 3 et 10 caractères",
+        nameExists: "Ce nom existe déjà dans le jeu",
+        selectAvatar: "Veuillez sélectionner un avatar"
+      }
     }
   },
   de: {
@@ -167,8 +185,14 @@ const translations = {
       start: "Spiel Starten",
       addPlayer: "Spieler Hinzufügen",
       playerName: "Spielername",
-      exit:"Ausfahrt",
-      playAgain: "Nochmal Spielen"
+      exit: "Ausfahrt",
+      playAgain: "Nochmal Spielen",
+      errors: {
+        validName: "Bitte geben Sie einen gültigen Namen ein",
+        nameLength: "Der Name muss zwischen 3 und 10 Zeichen lang sein",
+        nameExists: "Dieser Name existiert bereits im Spiel",
+        selectAvatar: "Bitte wählen Sie einen Avatar"
+      }
     }
   }
 };

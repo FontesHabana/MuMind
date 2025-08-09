@@ -24,19 +24,19 @@ export default function AddPlayerModal({onClose,onAddPlayer,players}) {
 
 
     if (!playerName.trim()) {
-        setError('Please insert a valid name');
+        setError(t('game.errors.validName'));
         return;
     }
     if (playerName.length<3||playerName.length>10) {
-        setError('Please insert a valid name');
+        setError(t('game.errors.nameLength'));
         return;
     }
     if (players.some(player=>player.name===playerName)) {
-        setError('This name already exits in the game');
+        setError(t('game.errors.nameExists'));
         return;
     }
     if (!selectedAvatar) {
-        setError('Please select a avatar');
+        setError(t('game.errors.selectAvatar'));
         return;
     }
 
@@ -105,7 +105,7 @@ export default function AddPlayerModal({onClose,onAddPlayer,players}) {
                                 key={avatar}
                                 onClick={()=>setSelectedAvatar(avatar)}
                                 className={` w-20 h-20  cursor-pointer mb-3 p-1 rounded-full transition-all ${selectedAvatar===avatar? 'ring-4 ring-pink-500 transform scale-105':'hover:ring-2 hover:ring-gray-300'}`}>
-                                    <img src={`/images/${avatar}`} alt={`Avatar ${avatar}`}
+                                    <img src={`/MuMind/images/${avatar}`} alt={`Avatar ${avatar}`}
                                     className="w-full h-full rounded-full" />
                                 </div>
                             ))}
