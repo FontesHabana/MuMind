@@ -77,7 +77,7 @@ export default function ScoreBoard({players,setPlayers, onNewRound, onExit, onNe
                         <div className='flex items-center'>
                         <div className='w-16 h-16 relative mr-4 group cursor-pointer' onClick={() => toggleCow(player.id)}>
                             <img 
-                                src={`/MuMind/images/${player.image}`} 
+                                src={`/images/${player.image}`} 
                                 alt={player.name}
                                 className="w-16 h-16 rounded-full transition-all duration-300 group-hover:scale-105" 
                             />

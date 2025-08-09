@@ -44,7 +44,7 @@ export default function LobbyScreen({players, setPlayers, onStartGame, onExit}){
                 {players.map(player=>(
                     <div key={player.id} className='bg-white  rounded-lg   flex items-center justify-between'>
                         <div className='flex items-center'>
-                        <img src={`/MuMind/images/${player.image}`} 
+                        <img src={`/images/${player.image}`} 
                              alt={player.name}
                              className='w-16 h-16 rounded-full mr-4' />
                         <p className='font-medium text-lg'>
