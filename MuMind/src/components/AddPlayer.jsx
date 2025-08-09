@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { div, image } from "framer-motion/client";
-
+import { useLanguage } from "../contexts/LanguageContext";
 const avatarOptions=[
     'avatar1.webp',
     'avatar2.webp',
@@ -14,7 +14,7 @@ const avatarOptions=[
 
 
 export default function AddPlayerModal({onClose,onAddPlayer,players}) {
-
+  const {t}=useLanguage();
   const [playerName, setPlayerName]=useState('');
   const [selectedAvatar, setSelectedAvatar]=useState(avatarOptions[0]);
   const[error, setError]=useState('');
@@ -75,14 +75,14 @@ export default function AddPlayerModal({onClose,onAddPlayer,players}) {
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
             >
-              <h2 className="text-3xl font-bold mb-6">New Player</h2>
+              
 
             <div className="p-6">
                 <form onSubmit={handleSubmit}>
 
                     <div className="mb-6">
                         <label htmlFor="playerName" className="block text-gray-700 font-medium mb-2">
-                            Player Name
+                            {t("game.playerName")}
                         </label>
                         <input type="text"
                                id="playerName"
@@ -116,7 +116,7 @@ export default function AddPlayerModal({onClose,onAddPlayer,players}) {
                         <div className="mb-4 p-2 bg-red-100 text-red-700 rounded-lg text-center">{error}</div>
                     )}
 
-                      <button type="submit" className="bg-pink-500 m-2 text-white font-bold text-1xl lg:text-2xl  lg:px-6 lg:py-2 px-5 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">Add Player</button>
+                      <button type="submit" className="bg-pink-500 m-2 text-white font-bold text-1xl lg:text-2xl  lg:px-6 lg:py-2 px-5 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">{t("game.addPlayer")}</button>
 
               {/* ✅ Botón cerrar */}
               <motion.button

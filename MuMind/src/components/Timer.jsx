@@ -4,7 +4,7 @@ import { motion, AnimatePresence, degrees } from "framer-motion";
 import { div } from "framer-motion/client";
 
 export default function Timer(){
-    const [count, setCount]=useState(60);
+    const [count, setCount]=useState(30);
     const [isVisible,setIsVisible]=useState(true);
 
     useEffect(()=>{

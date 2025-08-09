@@ -86,7 +86,7 @@ export default function QuestionCard(props ){
        const timeOut=setTimeout(()=>{
       props.onFlipComplete();
       
-    },61000);
+    },31000);
     return ()=> clearTimeout(timeOut);
     }
   },[count, props.onFlipComplete]);

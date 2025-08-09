@@ -6,7 +6,7 @@ const translations = {
     home: {
       title: "MENTE",
       subtitle: "VACUNA",
-      play: "Jugar",
+      play: "Nuevo Juego",
       howToPlay: "Cómo Jugar",
       settings: "Configuración"
     },
@@ -23,27 +23,24 @@ const translations = {
     howToPlay: {
       title: "Cómo Jugar",
       instructions: [
-        "1. Agrega jugadores a la partida",
-        "2. Selecciona la cantidad de rondas",
-        "3. Responde las preguntas rápidamente",
-        "4. Gana puntos por respuestas correctas",
-        "5. ¡El jugador con más puntos gana!"
+        "1. Necesitarás papel y lápiz para mantener el puntaje y escribir respuestas.",
+        "2. También necesitarás una 'vaca rosa' - toca la imagen del jugador para asignarla.",
+        "3. Lee una pregunta. Cada jugador escribe la respuesta que cree que otros jugadores también elegirán.",
+        "4. Todos muestran sus respuestas. Los jugadores que dieron la respuesta más común obtienen 1 punto.",
+        "5. Si dos respuestas diferentes son igualmente comunes, nadie obtiene puntos.",
+        "6. Si un jugador es el único en dar una respuesta que no coincide con ninguna otra, obtiene la vaca rosa.",
+        "7. Si tienes la vaca rosa, puedes seguir puntuando, pero no puedes ganar. Solo puedes pasarla cuando alguien más dé una respuesta única.",
+        "8. ¡El primer jugador en obtener 8 puntos es el ganador!",
+        "9. Si hay empate, juega hasta 9 puntos... luego 10... y así hasta que alguien esté un punto por delante."
       ]
     },
     game: {
       players: "Jugadores",
-      rounds: "Rondas",
+      rounds: "Nueva Ronda",
       start: "Iniciar Partida",
       addPlayer: "Agregar Jugador",
       playerName: "Nombre del jugador",
-      remove: "Eliminar",
-      question: "Pregunta",
-      timeUp: "¡Tiempo agotado!",
-      correct: "¡Correcto!",
-      incorrect: "Incorrecto",
-      nextPlayer: "Siguiente Jugador",
-      finalScores: "Puntuaciones Finales",
-      winner: "¡Ganador!",
+     exit:"Salir",
       playAgain: "Jugar de Nuevo"
     }
   },
@@ -68,27 +65,25 @@ const translations = {
     howToPlay: {
       title: "How to Play",
       instructions: [
-        "1. Add players to the game",
-        "2. Select the number of rounds",
-        "3. Answer questions quickly",
-        "4. Earn points for correct answers",
-        "5. The player with the most points wins!"
+        "1. You'll need a pen and paper, for keeping score and writing answers.",
+        "2. You'll also need a 'pink cow' — tap the player's image to assign it.",
+        "3. Read out a question. Each player writes down the answer they think most other players will also pick.",
+        "4. Everyone shows their answers. Players who gave the answer that was most common get 1 point.",
+        "5. If two different answers are equally common, no one gets any points.",
+        "6. If a player is the only one to give an answer that doesn't match at least one other, then they get the pink cow.",
+        "7. If you have the pink cow, you can keep scoring points, but you can't win the game. You can only pass it on when someone else gives a stand alone answer.",
+        "8. The first player to get 8 points is the winner!",
+        "9. If you have a draw, play first to 9 points… then 10… and so on until someone ends up one point ahead of everyone else."
       ]
     },
     game: {
       players: "Players",
-      rounds: "Rounds",
+      rounds: "New Round",
       start: "Start Game",
       addPlayer: "Add Player",
       playerName: "Player name",
       remove: "Remove",
-      question: "Question",
-      timeUp: "Time's up!",
-      correct: "Correct!",
-      incorrect: "Incorrect",
-      nextPlayer: "Next Player",
-      finalScores: "Final Scores",
-      winner: "Winner!",
+      exit:"Exit",
       playAgain: "Play Again"
     }
   },
@@ -113,27 +108,24 @@ const translations = {
     howToPlay: {
       title: "Comment Jouer",
       instructions: [
-        "1. Ajoutez des jugadores a la partie",
-        "2. Seleccione la cantidad de tours",
-        "3. Répondez rapidement aux questions",
-        "4. Gagnez des points pour les bonnes réponses",
-        "5. Le joueur avec le plus de points gagne !"
+        "1. Vous aurez besoin d'un stylo et de papier pour garder le score et écrire les réponses.",
+        "2. Vous aurez aussi besoin d'une 'vache rose' — touchez l'image du joueur pour l'assigner.",
+        "3. Lisez une question. Chaque joueur écrit la réponse qu'il pense que la plupart des autres joueurs choisiront aussi.",
+        "4. Tout le monde montre ses réponses. Les joueurs qui ont donné la réponse la plus commune obtiennent 1 point.",
+        "5. Si deux réponses différentes sont également communes, personne n'obtient de points.",
+        "6. Si un joueur est le seul à donner une réponse qui ne correspond à aucune autre, alors il obtient la vache rose.",
+        "7. Si vous avez la vache rose, vous pouvez continuer à marquer des points, mais vous ne pouvez pas gagner le jeu. Vous ne pouvez la transmettre que quand quelqu'un d'autre donne une réponse unique.",
+        "8. Le premier joueur à obtenir 8 points est le gagnant !",
+        "9. En cas d'égalité, jouez jusqu'à 9 points… puis 10… et ainsi de suite jusqu'à ce que quelqu'un ait un point d'avance."
       ]
     },
     game: {
       players: "Joueurs",
-      rounds: "Tours",
+      rounds: "Nouvelle Tours",
       start: "Commencer la Partie",
       addPlayer: "Ajouter Joueur",
       playerName: "Nom du joueur",
-      remove: "Supprimer",
-      question: "Question",
-      timeUp: "Temps écoulé !",
-      correct: "Correct !",
-      incorrect: "Incorrect",
-      nextPlayer: "Joueur Suivant",
-      finalScores: "Scores Finaux",
-      winner: "Gagnant !",
+      exit:"Retourner",
       playAgain: "Rejouer"
     }
   },
@@ -158,11 +150,15 @@ const translations = {
     howToPlay: {
       title: "Wie man spielt",
       instructions: [
-        "1. Fügen Sie Spieler zum Spiel hinzu",
-        "2. Wählen Sie die Anzahl der Runden",
-        "3. Beantworten Sie Fragen schnell",
-        "4. Verdienen Sie Punkte für richtige Antworten",
-        "5. Der Spieler mit den meisten Punkten gewinnt!"
+        "1. Sie benötigen Stift und Papier, um die Punkte zu verfolgen und Antworten zu schreiben.",
+        "2. Sie benötigen auch eine 'rosa Kuh' — berühren Sie das Spielerbild, um sie zuzuweisen.",
+        "3. Lesen Sie eine Frage vor. Jeder Spieler schreibt die Antwort auf, die er denkt, dass die meisten anderen Spieler auch wählen werden.",
+        "4. Alle zeigen ihre Antworten. Spieler, die die häufigste Antwort gegeben haben, erhalten 1 Punkt.",
+        "5. Wenn zwei verschiedene Antworten gleich häufig sind, bekommt niemand Punkte.",
+        "6. Wenn ein Spieler der einzige ist, der eine Antwort gibt, die mit keiner anderen übereinstimmt, dann bekommt er die rosa Kuh.",
+        "7. Wenn Sie die rosa Kuh haben, können Sie weiter Punkte sammeln, aber Sie können das Spiel nicht gewinnen. Sie können sie nur weitergeben, wenn jemand anderes eine einzigartige Antwort gibt.",
+        "8. Der erste Spieler, der 8 Punkte erreicht, ist der Gewinner!",
+        "9. Bei Gleichstand spielen Sie bis 9 Punkte… dann 10… und so weiter, bis jemand einen Punkt voraus ist."
       ]
     },
     game: {
@@ -171,14 +167,7 @@ const translations = {
       start: "Spiel Starten",
       addPlayer: "Spieler Hinzufügen",
       playerName: "Spielername",
-      remove: "Entfernen",
-      question: "Frage",
-      timeUp: "Zeit ist um!",
-      correct: "Richtig!",
-      incorrect: "Falsch",
-      nextPlayer: "Nächster Spieler",
-      finalScores: "Endstand",
-      winner: "Gewinner!",
+      exit:"Ausfahrt",
       playAgain: "Nochmal Spielen"
     }
   }

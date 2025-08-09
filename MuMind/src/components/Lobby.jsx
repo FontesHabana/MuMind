@@ -3,8 +3,10 @@ import AddPlayerModal from './AddPlayer';
 import Home from './Home';
 import { motion, AnimatePresence, degrees } from "framer-motion";
 import { div } from "framer-motion/client";
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function LobbyScreen({players, setPlayers, onStartGame, onExit}){
+    const {t}=useLanguage();
     const [showAddPlayerModal, setShowAddPlayerModal] =useState(false);
     const [isVisible,setIsVisible]=useState(true);
     const removePlayer=(id)=>{setPlayers(players.filter(player=>player.id!==id))}
@@ -37,7 +39,7 @@ export default function LobbyScreen({players, setPlayers, onStartGame, onExit}){
               transition={{ duration: 0.3, ease: "easeOut" }}>
 
            
-            <h2 className='text-4xl font-bold text-center mb-6 '>Players</h2>
+            <h2 className='text-4xl font-bold text-center mb-6 '>{t("game.players")}</h2>
             <div className='max-h-[60vh] min-w-[100%] lg:min-w-[80%] space-y-4 mb-6 self-center overflow-hidden overflow-y-auto'>
                 {players.map(player=>(
                     <div key={player.id} className='bg-white  rounded-lg   flex items-center justify-between'>
@@ -58,11 +60,11 @@ export default function LobbyScreen({players, setPlayers, onStartGame, onExit}){
             </div>
            
            <div className='mt-auto w-[80%] flex flex-wrap  justify-center items-center'> 
-                 <button onClick={()=> setShowAddPlayerModal(true)} className="bg-pink-500 m-2 mt-auto text-center w-[25%] min-w-40 whitespace-nowrap  text-white font-bold text-1xl lg:text-2xl  lg:px-6 lg:py-2 px-5 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">Add Player</button>
+                 <button onClick={()=> setShowAddPlayerModal(true)} className="bg-pink-500 m-2 mt-auto text-center  min-w-40 whitespace-nowrap  text-white font-bold text-1xl lg:text-2xl  lg:px-6 lg:py-2 px-5 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">{t("game.addPlayer")}</button>
            {/*Añadir logica inicio */}
-           <button onClick={newGame}  className="bg-pink-500 m-2 w-[25%] min-w-40 whitespace-nowrap text-white font-bold text-1xl lg:text-2xl  lg:px-6 lg:py-2 px-5 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">Start Game</button>
+           <button onClick={newGame}  className="bg-pink-500 m-2  min-w-40 whitespace-nowrap text-white font-bold text-1xl lg:text-2xl  lg:px-6 lg:py-2 px-5 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">{t("game.start")}</button>
 
-           <button onClick={exitComponent} className="bg-pink-500 m-2 w-[25%] min-w-40 text-white font-bold text-1xl lg:text-2xl  lg:px-6 lg:py-2 px-5 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">Exit</button>
+           <button onClick={exitComponent} className="bg-pink-500 m-2  min-w-40 text-white font-bold text-1xl lg:text-2xl  lg:px-6 lg:py-2 px-5 py-3 rounded-full shadow-lg hover:bg-pink-600 transition drop-shadow-md transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer">{t("game.exit")}</button>
            </div>
           
                 

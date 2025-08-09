@@ -24,26 +24,13 @@ export default function HowToPlay({open,setOpen}){
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeOut" }}>
                 <h2 className="text-3xl font-bold mb-4">{t("howToPlay.title")}</h2>
-                <p className="text-[1.5rem] mb-6 text-left">
-                    1.
-First you’ll need a pen and paper, for keeping score and writing answers. <br />
-2. 
-The other thing you’ll need is a ‘pink cow’ — these are pretty rare, so our advice is to find something else that’s bright pink (or that looks cow-ish!)
-<br />3.
-Read out a question. Each player writes down the answer they think most other players will also pick.
-<br />4.
-Everyone shows their answers. Players who gave the answer that was most common get 1 point. Everyone else gets nothing
-<br />5.
-If two different answers are equally common, no one gets any points.
-<br />6.
-If a player is the only one to give an answer that doesn’t match at least one other, then they get the pink cow.
-<br />7.
-If you have the pink cow, you can keep scoring points, but you can’t win the game. You can only pass it on when someone else gives a stand alone answer, during another question.
-<br />8.
-The first player to get 8 points is the winner!
-<br />9.
-If you have a draw, play first to 9 points… then 10… and so on until someone ends up one point ahead of everyone else.
-                </p>
+                <div className="text-[1.2rem] mb-6 text-left">
+                  {t("howToPlay.instructions").map((instruction, index) => (
+                    <p key={index} className="mb-3">
+                      {instruction}
+                    </p>
+                  ))}
+                </div>
 
                 
               </motion.div>
