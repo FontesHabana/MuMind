@@ -39,9 +39,11 @@ const translations = {
       rounds: "Nueva Ronda",
       start: "Iniciar Partida",
       addPlayer: "Agregar Jugador",
+      error:"Por favor inserte un nombre válido",
       playerName: "Nombre del jugador",
      exit:"Salir",
-      playAgain: "Jugar de Nuevo"
+      playAgain: "Jugar de Nuevo",
+      skip:"Saltar",
     }
   },
   en: {
@@ -81,10 +83,12 @@ const translations = {
       rounds: "New Round",
       start: "Start Game",
       addPlayer: "Add Player",
+      error:"Please insert a valid name",
       playerName: "Player name",
       remove: "Remove",
       exit:"Exit",
-      playAgain: "Play Again"
+      playAgain: "Play Again",
+      skip:"Skip",
     }
   },
   fr: {
@@ -124,9 +128,11 @@ const translations = {
       rounds: "Nouvelle Tours",
       start: "Commencer la Partie",
       addPlayer: "Ajouter Joueur",
+      error:"Veuillez saisir un num valide",
       playerName: "Nom du joueur",
       exit:"Retourner",
-      playAgain: "Rejouer"
+      playAgain: "Rejouer",
+      skip:"Sauter",
     }
   },
   de: {
@@ -166,9 +172,11 @@ const translations = {
       rounds: "Runden",
       start: "Spiel Starten",
       addPlayer: "Spieler Hinzufügen",
+      error:"Bitte geben Sie einen gültigen Namen ein",
       playerName: "Spielername",
       exit:"Ausfahrt",
-      playAgain: "Nochmal Spielen"
+      playAgain: "Nochmal Spielen",
+      skip:"Überspringen",
     }
   }
 };

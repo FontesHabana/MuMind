@@ -24,11 +24,11 @@ export default function AddPlayerModal({onClose,onAddPlayer,players}) {
 
 
     if (!playerName.trim()) {
-        setError('Please insert a valid name');
+        setError(t("game.error"));
         return;
     }
     if (playerName.length<3||playerName.length>10) {
-        setError('Please insert a valid name');
+        setError(t("game.error"));
         return;
     }
     if (players.some(player=>player.name===playerName)) {
@@ -46,6 +46,8 @@ export default function AddPlayerModal({onClose,onAddPlayer,players}) {
         image:selectedAvatar,
         points:0,
         hasCow:false,
+        addPointBool:true,
+        removePointBool:false,
     });
 
     setPlayerName('');

@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import AddPlayerModal from './AddPlayer';
 import Home from './Home';
 import { motion, AnimatePresence, degrees } from "framer-motion";
@@ -27,24 +27,36 @@ export default function ScoreBoard({players,setPlayers, onNewRound, onExit, onNe
     }
 
 
-
+    function setPlayersBool(){
+         setPlayers(players.map(player=>({
+            ...player,
+            addPointBool:true,
+            removePointBool:false,
+        })));
+    }
 
     const addPoint=(id)=>{
         setPlayers(players.map(player=>{
+           if (player.addPointBool) {
             if(player.id===id){
-                return {...player, points: player.points + 1}
+
+                return {...player, points: player.points + 1, addPointBool:!player.addPointBool, removePointBool:!player.removePointBool}
             }
+           } 
             return player;
         }))
     }
     const removePoint=(id)=>{
         setPlayers(players.map(player=>{
+           if (player.removePointBool) {
             if(player.id===id ){
                 if (player.points>0) {
-                     return {...player, points: player.points - 1}
+                     return {...player, points: player.points - 1, addPointBool:!player.addPointBool, removePointBool:!player.removePointBool}
                 }
                
             }
+           }
+            
             return player;
         }))
     }
@@ -56,6 +68,9 @@ export default function ScoreBoard({players,setPlayers, onNewRound, onExit, onNe
         })));
     }
 
+    useEffect(()=>{
+      setPlayersBool();  
+    },[]);
 
     return(
       

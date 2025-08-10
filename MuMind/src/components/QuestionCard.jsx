@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import { motion, AnimatePresence, degrees } from "framer-motion";
 import { div, p } from "framer-motion/client";
 import Timer from './Timer';
+import { useLanguage } from '../contexts/LanguageContext';
+
 
   const cardBase=[
    
@@ -33,7 +35,7 @@ export default function QuestionCard(props ){
     const [count, setCount]=useState(3);
     const[showTimer,setShowTimer]=useState(false);
     const[flipped,setFlipped]=useState(false);
-   
+    const {t}=useLanguage();
   
     const RandomIndex=  Math.floor(Math.random()*cardBase.length);
     const RandomSvg=cardBase[RandomIndex];
@@ -109,7 +111,7 @@ export default function QuestionCard(props ){
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeOut" }}>
-           Skip
+           {t("game.skip")}
         </button>
                  </div>}
 
