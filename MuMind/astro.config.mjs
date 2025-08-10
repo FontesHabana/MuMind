@@ -11,8 +11,6 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
-  site: 'https://FontesHabana.github.io', 
-  // Reemplaza <TU_REPOSITORIO> con el nombre de tu repositorio
-  base: '/MuMind/',
+ 
   integrations: [react()]
 });
