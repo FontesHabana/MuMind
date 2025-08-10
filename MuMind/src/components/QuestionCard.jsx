@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useRef, useState} from 'react';
 import { useEffect } from 'react';
 import { motion, AnimatePresence, degrees } from "framer-motion";
 import { div, p } from "framer-motion/client";
@@ -33,7 +33,7 @@ export default function QuestionCard(props ){
     const [count, setCount]=useState(3);
     const[showTimer,setShowTimer]=useState(false);
     const[flipped,setFlipped]=useState(false);
-
+   
   
     const RandomIndex=  Math.floor(Math.random()*cardBase.length);
     const RandomSvg=cardBase[RandomIndex];
@@ -91,8 +91,8 @@ export default function QuestionCard(props ){
     }
   },[count, props.onFlipComplete]);
     
-
-
+    
+  
     function exitComponent(){
         setIsVisible(false);
         setTimeout(()=>{
@@ -104,6 +104,13 @@ export default function QuestionCard(props ){
 <>
     {showTimer&& <div className='absolute top-0 right-0'>
                   <Timer />
+                   <button onClick={props.onFlipComplete} className='w-30 h-15 m-2 flex justify-center items-center rounded-4xl bg-pink-900 text-white text-3xl font-bold  transition-transform duration-300 ease-in-out transform hover:scale-110 hover:cursor-pointer'
+         initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}>
+           Skip
+        </button>
                  </div>}
 
       <div className="perspective-1000" style={{ perspective: '1000px' }}>
